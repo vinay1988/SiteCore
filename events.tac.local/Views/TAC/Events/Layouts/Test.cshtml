@@ -1,0 +1,101 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+  Layout = null;
+}
+<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+
+<head>
+    @Html.Sitecore().VisitorIdentification()
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="xxx">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>xxx</title>
+    <link rel="stylesheet" type="text/css" href="/Css/vendor.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/niteflight.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/addition.css">
+    <link rel="stylesheet" type="text/css" href="/Css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Css/Difficulty.css">
+</head>
+
+<body class="header-static ">
+    <div id="main-container">
+        <!-- [Page Header] -->
+        <header class="header-static">
+            <nav class="navbar navbar-default navbar-static" id="mainNavbar">
+                <div class="container">
+                    <!-- [Company Logo] -->
+                    <div class="navbar-left">
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo">
+                                <img src="Images/Logo_400x60.png" alt="The Adventure Company" width="400" height="60" />
+                            </span>
+                        </a>
+                    </div>
+                    <!-- [/Company Logo] -->
+                    <!-- [Main Navigation] -->
+                    <div class="navbar-left">
+                        <div class="collapse navbar-collapse" id="siteNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a class="text-uppercase" href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="Event-Sections.html" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        Events<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="Event-List.html">aaaa</a></li>
+                                        <li><a href="Event-List.html">bbbb</a></li>
+                                        <li><a href="Event-List.html">cccc</a></li>
+                                        <li><a href="Event-List.html">dddd</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- [/Main Navigation] -->
+                    <!-- [Language Navigation] -->
+                    <div class="navbar-right">
+                        <div class="navbar-activity">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="active"><a href="#">English</a></li>
+                                        <li><a href="#">Test 1</a></li>
+                                        <li><a href="#">日本語 (日本)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- [/Language Navigation] -->
+                </div>
+            </nav>
+        </header>
+        <!-- [/Page Header] -->
+       
+     @Html.Sitecore().Placeholder("main")
+       
+        <!-- [Footer Content] -->
+        <footer>
+           Footer
+        </footer>
+        <!-- [/Footer Content] -->
+    </div>
+    <script src="Scripts/Sitecore.Foundation.Theming.min.js"></script>
+    <script src="Scripts/Navigation.js"></script>
+</body>
+
+</html>
